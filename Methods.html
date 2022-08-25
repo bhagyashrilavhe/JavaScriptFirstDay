@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+
+
+    <script>
+        var numbers = [1, 2, 3, 4, 5];
+
+        numbers.push(6);
+        numbers.unshift(7);
+        numbers.pop();
+        numbers.shift();
+        numbers.splice(2, 0, 11,12,13);
+
+        //var newlist = names.slice(2, 8);   
+        numbers.sort();
+        numbers.reverse();
+        document.getElementById("d1").innerHTML = numbers;
+        document.getElementById("d2").innerHTML = newlist;
+    </script>
+</body>
+</html>
