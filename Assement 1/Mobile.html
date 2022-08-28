@@ -1,0 +1,47 @@
+<html>
+<head></head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+
+    <script>
+        //3.Create an object Mobile & display features of an object, give 10 % discount on mobile price & display it.
+
+        var mobile =
+        {
+            compname: "Redmi",
+            modelno: "M1908C3II",
+            color: "Black",
+            price: 15000,
+            RAM: "4 GB",
+            storage: "64 GB",
+
+
+            display: function ()
+            {
+                return "CompName = " + this.compname + " ModelNo = " + this.modelno + " Color = " + this.color +
+                    " Price = " + this.price + " RAM = " + this.RAM + " Storage = " + this.storage;
+            },
+
+            dispfeatures: function ()
+            {
+                
+                return "Features => " + "RAM = " + this.RAM + "Storage = " + this.storage;
+                
+            },
+
+            discount: function ()
+            {
+                var result;
+                result = this.price * 0.01;
+                return result;
+            }
+        }
+        document.getElementById("d1").innerHTML = mobile.display();
+        document.getElementById("d2").innerHTML = mobile.dispfeatures();
+        document.getElementById("d3").innerHTML = mobile.discount();
+
+    </script>
+</body>
+</html>

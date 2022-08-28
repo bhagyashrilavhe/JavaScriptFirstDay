@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <script>
+          //1. product-> id, name,price  - display function  , discount-> 10 %
+
+        var prod =
+        {
+            pid: 1001,
+            pname: "Mouse",
+            price: 500,
+
+            display: function ()
+            {
+                return "Pid = " + this.pid + "  Prod Name = " + this.pname + " Price = " + this.price;
+            },
+            discount: function ()
+            {
+                var result;
+                result = this.price *0.01;
+                return result;
+            }
+        }
+        document.getElementById("d1").innerHTML = prod.display();
+        document.getElementById("d2").innerHTML = prod.discount();
+
+    </script>
+</body>
+</html>

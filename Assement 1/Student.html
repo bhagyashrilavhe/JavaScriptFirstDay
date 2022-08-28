@@ -1,0 +1,41 @@
+<html>
+<head></head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+
+    <script>
+        //2. Create an object student with their 3 subjects marks, create a function to calculate total & percentage
+
+        var stud =
+        {
+            sid:1,
+            sname:"Bhagyashri",
+            sub1: 78,
+            sub2: 91,
+            sub3: 86,
+
+            display: function () 
+            {
+                return "Sid = " + this.sid + "  Sname = " + this.sname + " Sub1 = " + this.sub1 + " Sub2 = " + this.sub2 + " Sub3 = " + this.sub3;
+            },
+
+            caltotal: function () {
+                var total;
+                total = " Total : "+(this.sub1 + this.sub2 + this.sub3);
+                return total;
+            },
+
+            percentage: function () {
+                var per;
+                per = "Percentage : " + ((this.sub1 + this.sub2 + this.sub3) / 3.0);
+                return per;
+            }
+        }
+        document.getElementById("d1").innerHTML = stud.display();
+        document.getElementById("d2").innerHTML = stud.caltotal();
+        document.getElementById("d3").innerHTML = stud.percentage();
+    </script>
+</body>
+</html>
